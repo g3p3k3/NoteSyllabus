@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/sysu_icon"
+        android:contentDescription="@string/app_name" />
+
+    <EditText
+        android:id="@+id/username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/logo"
+        android:layout_marginTop="50dp"
+        android:drawableLeft="@drawable/username"
+        android:text=""
+        android:hint="@string/jwxt_account" />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/username"
+        android:drawableLeft="@drawable/password"
+        android:hint="@string/jwxt_password"
+        android:text=""
+        android:inputType="textPassword" />
+    
+    <EditText
+        android:id="@+id/checkcode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/password"
+        android:hint="输入验证码" />
+    
+    <ImageView
+        android:id="@+id/iv_code"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/checkcode" />
+
+    <Button
+        android:id="@+id/login"
+        android:layout_width="180dp"
+        android:layout_height="45dp"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@drawable/password"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="80dp"
+        android:background="@drawable/btn_login_selector"
+        android:text="@string/login"
+        android:textColor="#fff" />
+
+</RelativeLayout>

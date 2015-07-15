@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/addAffTV_name"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="课程事务"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/addAffET_name"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@+id/addAffTV_name"
+        android:hint="输入课程或事务名称"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/addAffTV_start"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/addAffTV_name"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="开始节数"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/addAffET_start"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/addAffET_name"
+        android:layout_toRightOf="@+id/addAffTV_start"
+        android:layout_marginTop="5dp"
+        android:hint="如1-3节，请输入1"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/addAffTV_total"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/addAffTV_start"
+        android:layout_marginTop="20dp"
+        
+        android:gravity="center"
+        android:text="总节数"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/addAffET_total"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/addAffET_start"
+        android:layout_toRightOf="@+id/addAffTV_total"
+        android:layout_marginTop="5dp"
+        android:hint="如2-4节，请输入3"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/addAffTV_day"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/addAffTV_total"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="星期"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/addAffET_day"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/addAffET_total"
+        android:layout_toRightOf="@+id/addAffTV_day"
+        android:layout_marginTop="5dp"
+        android:hint="请填入数字"
+        android:textSize="20sp" />
+    
+    <TextView
+        android:id="@+id/addAffTV_room"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/addAffTV_day"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="课室"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/addAffET_room"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/addAffET_day"
+        android:layout_toRightOf="@+id/addAffTV_room"
+        android:layout_marginTop="5dp"
+        android:hint="请填入课室号"
+        android:textSize="20sp" />
+    
+    <TextView
+        android:id="@+id/addAffTV_week"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/addAffTV_room"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="持续周期"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/addAffET_week"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/addAffET_room"
+        android:layout_toRightOf="@+id/addAffTV_week"
+        android:layout_marginTop="5dp"
+        android:hint="如“1-18周”"
+        android:textSize="20sp" />
+    
+    <TextView
+        android:id="@+id/addAffTV_teacher"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/addAffTV_week"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="讲师"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/addAffET_teacher"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/addAffET_week"
+        android:layout_toRightOf="@+id/addAffTV_teacher"
+        android:layout_marginTop="5dp"
+        android:hint="请输入讲师姓名"
+        android:textSize="20sp" />
+    
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal" >
+        
+        <Button 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="保存"
+            android:id="@+id/addAffBtn_save" />
+        
+        <Button 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="取消"
+            android:id="@+id/addAffBtn_cancel" />
+    </LinearLayout>
+
+</RelativeLayout>

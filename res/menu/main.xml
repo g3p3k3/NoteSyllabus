@@ -1,0 +1,12 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.charlie.notesyllabus.main.MainActivity" >
+
+    <item
+        android:id="@+id/open_drawer"
+        android:icon="@drawable/action_search"
+        android:showAsAction="ifRoom"
+        android:title="@string/action_settings"/>
+
+</menu>
