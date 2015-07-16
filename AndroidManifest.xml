@@ -39,7 +39,7 @@
         <activity android:name="com.charlie.notesyllabus.aimode.AIMode" />
         <activity android:name="com.charlie.notesyllabus.affair.AddAffair" />
 
-        <service android:name="com.charlie.coursetable.service.PollingService" />
+        <service android:name="com.charlie.notesyllabus.aimode.PollingService" />
         
     </application>
 
