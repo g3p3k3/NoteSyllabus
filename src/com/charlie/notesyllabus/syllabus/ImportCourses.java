@@ -102,6 +102,16 @@ public class ImportCourses extends Activity implements OnValueChangeListener,
 		}
 		else {
 			code = etCode.getText().toString();
+			// 检查验证码是否为空
+			if (code.length() == 0) {
+				// 弹出提示框
+				new AlertDialog.Builder(this).setTitle("提示")
+						.setMessage("验证码不能为空！").setPositiveButton("确定", null)
+						.show();
+				
+				return ;
+			}
+			
 			importAndStore(year1, year2, term, code);
 		}
 	}
